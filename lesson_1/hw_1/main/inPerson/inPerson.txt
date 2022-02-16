@@ -1,0 +1,4 @@
+
+name:Vasja
+age:32
+city:Lwiw
