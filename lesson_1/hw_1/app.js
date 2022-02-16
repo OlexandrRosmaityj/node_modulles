@@ -24,71 +24,50 @@ const fs = require("fs");
 //         throw err;
 //     }
 // })
-
-// const onlineUsers = {
+//
+// const onlineUsers = [{
 //     name: "Vasja",
 //     age: 32,
 //     city: 'Lwiw'
-// };
+// }];
+
+// onlineUsers.forEach(user =>{
+// for (const value in user) {
 //
-// for (const fsKey in onlineUsers) {
-//
-//     fs.appendFile(path.join(__dirname, 'main', 'inPerson', 'inPerson.txt'), `\n${fsKey}:${onlineUsers[fsKey]}`,
+//     fs.appendFile(path.join(__dirname, 'main', 'inPerson', 'inPerson.txt'), `\n${value}:${user[value]}`,
 //         (err) => {
 //             if (err) {
 //                 console.log(err)
 //                 throw err;
 //             }
 //         })
+//      }
+// });
 //
-// }
 //
-// const inPersonUsers = {
+// const inPersonUsers = [{
 //     name: "Ivan",
 //     age: 21,
 //     city: 'Lwiw'
-// };
+// }];
 //
-// for (const user in inPersonUsers) {
+// inPersonUsers.forEach(user => {
+// for (const value in user) {
 //
-//     fs.appendFile(path.join(__dirname, 'main', 'online', 'online.txt'), `\n${user}:${inPersonUsers[user]}`,
+//     fs.appendFile(path.join(__dirname, 'main', 'online', 'online.txt'), `\n${value}:${user[value]}`,
 //         (err) => {
 //             if (err) {
 //                 console.log(err)
 //                 throw err;
 //             }
 //         })
-//
-// }
+//     }
+// });
 
-
-// const change_folders = () => {
-//     fs.rename(path.join(__dirname, 'main', 'online', 'online.txt'),
-//         path.join(__dirname, 'main', 'online', 'inPerson.txt'),
-//         (err) => {
-//             if (err) {
-//                 console.log(err)
-//                 throw err;
-//             }
-//         }
-//     )
-//     ,
-//         fs.rename(path.join(__dirname, 'main', 'inPerson', 'inPerson.txt'),
-//             path.join(__dirname, 'main',  'inPerson', 'online.txt'),
-//             (err) => {
-//                 if (err) {
-//                     console.log(err)
-//                     throw err;
-//                 }
-//             }
-//         )
-// }
-//
-// reneme();
 
 const change = () => {
 
-    fs.readFile(path.join(__dirname, 'main', 'inPerson','inPerson.txt'), ((err, data) => {
+    fs.readFile(path.join(__dirname, 'main', 'inPerson', 'inPerson.txt'), ((err, data) => {
         if (err) {
             console.log(err);
             throw err
