@@ -1,4 +1,4 @@
 
-name:Vasja
-age:32
+name:Ivan
+age:21
 city:Lwiw
